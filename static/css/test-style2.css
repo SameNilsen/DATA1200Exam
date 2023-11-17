@@ -51,6 +51,7 @@ body, html {
 
   .caption span.border {
     background-color: #111;
+    /* background-color: rgb(255, 205, 0); */
     color: #fff;
     padding: 18px;
     font-size: 25px;
@@ -158,6 +159,11 @@ body, html {
 #collapse:checked ~ li{
     visibility: visible;
 }
+
+/* #collapse:checked{
+  background-color: aqua;
+  visibility: visible;
+} */
 
 
 #expand-btn {
