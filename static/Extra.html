@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page describing accessibility">
-    <title>Accessibility</title>
+    <meta name="description" content="Dog article">
+    <title>Full-image</title>
     <link rel="stylesheet" href="css/test-style2.css">
 </head>
 <body>
-    <header class="background-image-accessibility">
+    <div class="background-image-extra">
         <div class="caption">
             <span class="border"> Exam</span>
             <br>
-            <span class="border"> - Accessibility</span>
+            <span class="border"> - Extra</span>
         </div>
-        <nav class="navbar">
+        <div class="navbar">
             <ul class="unordered-list">
                 <input type="checkbox" id="collapse" hidden/> 
                 <label for="collapse" id="expand-btn"><img src="images/hammenu.png" alt="Menu"></label>    
@@ -25,53 +25,13 @@
                 <li class="navbar-item"><a href="index.html">Topical</a></li>
                 <li class="navbar-item"><a href="Extra.html">extra</a></li>
               </ul>
-            </nav>
-        </header>
+        </div>
+    </div>
 
-    <main class="flex-stack">
-        <section class="container-flex">
-            <section class="left-flex">
+    <div class="flex-stack">
+        <main class="container-flex">
+            <article class="left-flex">
                 <h1>Accessibility</h1>
-                <p class="short-paragraph"> When developing this website we ran accessibility tests for all the different pages multiple times
-                    and made changes along with the results. This image shows an accessibility test for one of our pages. The test was done with 
-                    Lighthouse, a built in developer tool for chrome. Eventually we got a <strong>100 score</strong> on each of the sections of
-                    the test. </p>
-            </section>
-            
-            <picture class="right-flex">
-                <img class="image-flex-box" src="images/placeholder-test-image.png" alt="oslomet sign">
-                <div class="image-text">
-                    <div>Dog, © Sally Anne Thompson/Animal Photography. (SKAL BYTTES UT)</div>
-                    <div><a href="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg">source</a></div>
-                </div>
-            </picture>
-        </section>
-        <section class="container-flex">
-            <picture class="left-flex">
-                <img class="image-flex-box" src="images/semantics-test.jpg" alt="oslomet sign">
-                <div class="image-text">
-                    <div>Dog, © Sally Anne Thompson/Animal Photography</div>
-                    <div><a href="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg">source</a></div>
-                </div>
-            </picture>
-            <section class="right-flex">
-                <h1>Semantics</h1>
-                <p class="long-paragraph">One of the tools we used to achive accessibility for our pages was to follow the guidelines from
-                    websites such as W3schools.com and MDN Web Docs. They specified the importance of semantics and the correct use of 
-                    html tags. This <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">page on HTML Elements from MDN</a> has a list of different elements and their usecases, which we followed to make 
-                    sure we had the correct tags in our own pages. For example, on this page, which layout is shared by all our pages except Topical, 
-                    we have a large image at the top of the page, and then the main content further down. Therefore the html code structuring the elements 
-                    such as the big image, navigation bar and primary header are put inside a &lt;header&gt; &lt;/header&gt; while the elements
-                    below are all put in a &lt;main&gt; &lt;/main&gt;. Within main our elements are supposed to come in pairs of some text and a 
-                    image. These pairs are grouped by &lt;section&gt; &lt;/section&gt; and further grouped by another section for the text
-                    and a &lt;picture&gt; &lt;/picture&gt; to contain the image and image text. We belive this is a nice structured way to 
-                    order the different elements and sections, both visually for the user and semantically for the browser and a potential
-                    future developer. </p>
-            </section>
-        </section>
-        <section class="container-flex">
-            <section class="left-flex">
-                <h1>Topical??</h1>
                 <p class="secondary-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, explicabo ipsam, molestias vero possimus eveniet eos porro provident incidunt, excepturi cupiditate libero ea in! Modi saepe debitis commodi error sed.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, explicabo ipsam, molestias vero possimus eveniet eos porro provident incidunt, excepturi cupiditate libero ea in! Modi saepe debitis commodi error sed.
                     Dolor cupiditate dicta pariatur enim deleniti impedit numquam nisi. Mollitia labore ea, itaque necessitatibus quasi eligendi deserunt dolore quos hic natus alias inventore laborum dolor ad sapiente quo similique officiis.
@@ -79,15 +39,47 @@
                     Asperiores dolor eos ipsum quo sapiente ipsa reiciendis magnam assumenda porro, omnis maiores repudiandae obcaecati exercitationem natus commodi nam fugiat et modi distinctio temporibus similique aliquam quos earum. Cumque, deleniti.
                     Culpa sequi ipsum ipsam, accusamus vel cum corporis tenetur cumque esse alias quis earum placeat asperiores eaque. Nesciunt temporibus accusantium, voluptatum quibusdam corrupti quae quas animi eum deleniti ab modi.
                     Rem a, eum asperiores odio ab libero, quod, at error cum perferendis tempora quis necessitatibus nulla tenetur harum. Velit eum inventore ipsa doloribus totam delectus cupiditate natus nemo excepturi commodi?</p>
-            </section>
-            <picture class="right-flex">
+            </article>
+            <div class="right-flex">
                 <img class="image-flex-box" src="images/oslomet-sign.jpg" alt="oslomet sign">
                 <div class="image-text">
                     <div>Dog, © Sally Anne Thompson/Animal Photography</div>
                     <div><a href="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg">source</a></div>
                 </div>
-            </picture>
-        </section>
-    </main>
+            </div>
+        </main>
+        <div class="container-flex">
+            <div class="left-flex">
+                <img class="image-flex-box" src="images/oslomet-img.jpg" alt="oslomet sign">
+                <div class="image-text">
+                    <div>Dog, © Sally Anne Thompson/Animal Photography</div>
+                    <div><a href="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg">source</a></div>
+                </div>
+            </div>
+            <article class="right-flex">
+                <p class="short-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, explicabo ipsam, molestias vero possimus eveniet eos porro provident incidunt, excepturi cupiditate libero ea in! Modi saepe debitis commodi error sed.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, explicabo ipsam, molestias vero possimus eveniet eos porro provident incidunt, excepturi cupiditate libero ea in! Modi saepe debitis commodi error sed.</p>
+            </article>
+        </div>
+        <main class="container-flex">
+            <article class="left-flex">
+                <h1>Accessibility</h1>
+                <p class="secondary-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, explicabo ipsam, molestias vero possimus eveniet eos porro provident incidunt, excepturi cupiditate libero ea in! Modi saepe debitis commodi error sed.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, explicabo ipsam, molestias vero possimus eveniet eos porro provident incidunt, excepturi cupiditate libero ea in! Modi saepe debitis commodi error sed.
+                    Dolor cupiditate dicta pariatur enim deleniti impedit numquam nisi. Mollitia labore ea, itaque necessitatibus quasi eligendi deserunt dolore quos hic natus alias inventore laborum dolor ad sapiente quo similique officiis.
+                    Nobis facere corporis eaque. Odio, enim quos. Quam fuga, velit, magnam a eius voluptas dignissimos in quisquam libero repudiandae quaerat. Voluptas aspernatur excepturi aliquam veniam amet non harum sint. Error?
+                    Asperiores dolor eos ipsum quo sapiente ipsa reiciendis magnam assumenda porro, omnis maiores repudiandae obcaecati exercitationem natus commodi nam fugiat et modi distinctio temporibus similique aliquam quos earum. Cumque, deleniti.
+                    Culpa sequi ipsum ipsam, accusamus vel cum corporis tenetur cumque esse alias quis earum placeat asperiores eaque. Nesciunt temporibus accusantium, voluptatum quibusdam corrupti quae quas animi eum deleniti ab modi.
+                    Rem a, eum asperiores odio ab libero, quod, at error cum perferendis tempora quis necessitatibus nulla tenetur harum. Velit eum inventore ipsa doloribus totam delectus cupiditate natus nemo excepturi commodi?</p>
+            </article>
+            <div class="right-flex">
+                <img class="image-flex-box" src="images/oslomet-sign.jpg" alt="oslomet sign">
+                <div class="image-text">
+                    <div>Dog, © Sally Anne Thompson/Animal Photography</div>
+                    <div><a href="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg">source</a></div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
