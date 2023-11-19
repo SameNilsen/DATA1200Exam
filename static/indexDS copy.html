@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=10.">
+</head>
+<style>
+    /* Grid classes */
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .grid-item {
+        background-color: purple;
+        border: 1px solid rgb(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    /* Grid ids */
+    #large-header {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        padding: 100px;
+        background-color: white;
+        color: black;
+        text-align: center;
+    }
+    #small-header {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: blue;
+        text-align: left;
+    }
+    #nav{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: grey;
+        padding: 5px;
+        position: sticky;
+        top: 0;
+    }
+    #task-section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: yellow;
+        text-align: left;
+    }
+    #summary-section {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        background-color: yellowgreen;
+        text-align: left;
+    }
+    #article {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: lightgrey;
+        text-align: left;
+    }
+    #aside {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        background-color: green;
+        text-align: center;
+    }
+    #details {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        background-color: brown;
+    }
+    #footer{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: red;
+        padding: 100px;
+    }
+    /* navigation bar */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li {
+        float: left;
+    }
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    /* links */
+    a:link {
+        color: blue;
+        background-color:transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: green;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+</style>
+<body>
+<div class="grid-container">
+    <div class="grid-item" id="nav">
+        <ul>
+            <li><a href="">index</a></li>
+            <li><a href="">accessibility</a></li>
+            <li><a href="">topical</a></li>
+            <li><a href="">remaining 1</a></li>
+            <li><a href="">remaining 2</a></li>
+        </ul>
+    </div>
+    <div class="grid-item" id="large-header">Technology and Sustainability (image?)</div>
+    <div class="grid-item" id="small-header">Introduction:</div>
+    <div class="grid-item" id="article">
+        <p>
+            Imagine for a moment that you have two bank accounts. 
+            In one account there is money. In the other account there is a 
+            Personal Carbon Allowance (PCA) representing the amount of Co2 you 
+            are allowed to release into the atmosphere each year.   
+            When you book a plane ticket to your favorite destination you pay 
+            for your ticket with money, but in addition you will have to pay in 
+            kg of carbon emitted into the atmosphere during your flight. 
+            Flying from Oslo to London will set you back, 1200NOK and 241kg of 
+            Co2 (an Iphone will cost you approx. 70 kg of Co2).
+        </p>
+        <p>
+            This scheme places the responsibility of pollution in the hands 
+            of the consumer and, in addition to existing emission quotas 
+            on a national level, could help reach the goal of achieving the 
+            UN sustainable development goals. 
+        </p>
+        <p>
+            If you live an environmentally friendly lifestyle, or simply do 
+            not have the money to do otherwise, you can sell your unspent 
+            allowance on the open market (trade Kg of Co2 for money). 
+            The PCA scheme will limit your personal freedom to travel, 
+            shop and consume. Your allowance, distributed by the government
+             once a year, will decrease slowly over time in accordance with
+              the national quota, but PCA could lead to a redistribution of
+               wealth and make emissions more visible to the consumer. 
+        </p>
+    </div>
+    <div class="grid-item" id="aside">advertisment</div>
+    <div class="grid-item" id="small-header">Case:</div>
+    <div class="grid-item" id="article">
+        <p>
+            The PCA is one of many radical solutions proposed to fighting 
+            climate change. In this case you will discuss how this scheme 
+            is related to the UN sustainability goals and potential 
+            technological solutions. Keep in mind what role computer 
+            programmer might have in the success of PCA. Follow the steps 
+            below, to explore the PCA further.
+        </p>
+    </div>
+    <div class="grid-item" id="details">
+        <ul>
+            <li><a href="#S1">step 1</a></li>
+            <li><a href="#S2">step 2</a></li>
+            <li><a href="#S3">step 3</a></li>
+            <li><a href="#S4">step 4</a></li>
+            <li><a href="#S5">step 5</a></li>
+        </ul>
+    </div>
+    <div class="grid-item" id="small-header">
+        <div id="S1">step 1</div>
+    </div>
+    <div class="grid-item" id="task-section">
+        <p>
+            Key Terms
+
+            Identify the key terms related to this case and the module in 
+            Canvas. Choose a maximum of 4. Write a one sentence definition 
+            for each term in your own words
+        </p>
+    </div>
+    <div class="grid-item" id="summary-section">
+        <p>
+            Sustainability: Meeting the needs of the current population 
+            without compromising the need of future generations.
+    
+            UN sustainabile development goals: Objectives that are part of 
+            a blueprint for peace and prosperity for all humans on earth. 
+            
+            Kate Raworth’s donut: Shows how humanity can develop and thrive 
+            in sustainable way by staying between the outer planetary 
+            boundary and the inner social foundation.
+            
+            Planned obsolescence: Designing a product to become undesirable 
+            or unfunctional after a planned amount of time.
+        </p>
+    </div>
+    <div class="grid-item" id="small-header">
+        <div id="S2">step 2</div>
+    </div>
+    <div class="grid-item" id="task-section">
+        <p>
+            2.	Choose the three UN Sustainability goals that is most 
+            relevant (positive/negative) to the PCA scheme:
+            Are there conflicts between such a scheme and the SDGs?
+        </p>
+    </div>
+    <div class="grid-item" id="summary-section">
+        <p>
+            •	Nr 1: No poverty
+            •	Nr 12: Reasonable consumption and production
+            •	Nr 13: Climate action
+
+            A harmful side effect of this scheme is that it could hurt goal 
+            1, which is to eliminate poverty. The reason why is that it 
+            could hurt economic development and increase the threshold one 
+            need to overcome to escape poverty. This scheme has a positive 
+            effect on goal 12, since it both gives companies an incentive 
+            to use less CO2 in their products and services and it reduces 
+            the consumption of costumers. The scheme is directly aimed to 
+            limit CO2 emitted, which make it a big step for taking climate 
+            action, goal 13.
+        </p>
+    </div>
+    <div class="grid-item" id="small-header">
+        <div id="S3">step 3</div>
+    </div>
+    <div class="grid-item" id="task-section">
+        <p>
+            3.	Describe your immediate reactions to the PCA scheme:
+            Write down anything that comes to mind for the group members. 
+            Use bulletpoints/a paragraph or keywords. 
+        </p>
+    </div>
+    <div class="grid-item" id="summary-section">
+        <p>
+            •	The scheme is a radical action, it is not clear what the 
+            social consequences will be, many people will have a negative 
+            view.
+            •	It is a good way of encouraging people to take climate 
+            action, because it will have financial implications for 
+            individuals.
+            •	It is not obvious how it would be implemented and what the 
+            effects on privacy would be. How does purchases made using 
+            physical money know how much more CO2 you are allowed to spend?
+             Does all financial transactions need to be accessed by the 
+             public or the state?
+        </p>
+    </div>
+    <div class="grid-item" id="small-header">
+        <div id="S4">step 4</div>
+    </div>
+    <div class="grid-item" id="task-section">
+        <p>
+            6.	Make up your mind!
+                Will this make society and the environment better 
+                or worse: 
+        </p>
+    </div>
+    <div class="grid-item" id="summary-section">
+        <p>
+            It is very difficult to determine the scheme is going to have 
+            an overall positive or negative impact on the environment and 
+            society. 
+
+            The PCA does force individuals to limit CO2 and consume less 
+            which is better for the environment and the climate. 
+            It encourages efficiency and more clean energy, because the 
+            amount of CO2 one is allowed to spend is directly dependent on 
+            the society's CO2-quotas. If a product has a smaller carbon 
+            footprint, it is then less expensive in terms of PCA.
+ 
+            It could also have some serious unintentional consequences. 
+            Since people must consume less, this will hurt the global 
+            demand for products. If the demand decreases and there is 
+            enough of supply, this could hurt the innovation and desire 
+            for creating new products and technology. The scheme is also a 
+            form of oppression, since it allows the government to have 
+            access to the population’s economic activities, which is a 
+            trait more associated with totalitarian regimes. 
+
+            The PCA would most likely have positive consequences for the 
+            environment by limiting human consumption and putting a 
+            financial incentive to make CO2-frendly products. 
+            The negative consequences will be presented socially and 
+            economically. 
+        </p>
+    </div>
+    <div class="grid-item" id="small-header">
+        <div id="S5">step 5</div>
+    </div>
+    <div class="grid-item" id="task-section">
+        <p>
+            7.	Identify potential consequences:
+                What about individual freedom?
+                What about political freedom?
+                Could it be misused?
+                Do privacy concerns outweigh positive effects on climate?
+                Are there social consequences?
+                Are there economic consequences?
+        </p>
+    </div>
+    <div class="grid-item" id="summary-section">
+        <p>
+            Individual freedom:
+
+            The PCA scheme needs to be enforced somehow and the government 
+            do need access to the population’s banking information. 
+            This compromises the freedom of individuals and can make them 
+            feel oppressed.
+
+            Political freedom:
+
+            Someone need to assign the value of PCA and there is a risk this
+             is done with political motives behind them. 
+             Politicians can allocate bad carbon behavior with the goals 
+             and policies of their opposition and declare them illegal. 
+
+            Misuse:
+
+            Corrupt politicians can accept bribes from certain companies 
+            and make their products and services more PCA-cheap and do 
+            the opposed to their competitors. 
+
+            Privacy vs climate:
+
+            Climate change is a serious issue that can have devastating 
+            consequences. It might be necessary to limit privacy in order 
+            to combat climate change. Humans are short-sighted and can 
+            be greedy, and it is possible it could doom civilization if 
+            freedom is not limited. On the other hand, it is not obvious 
+            if the PCA will work or if it is the best solution. 
+            Climate change is also not the only challenge humanity need to 
+            worry about, a pandemic, a super volcano or an asteroid could 
+            potentially end humanity. Limiting privacy and freedom, makes 
+            it harder to grow and obtain the technology and know how to 
+            deal with future problems.
+        </p>
+    </div>
+    <div class="grid-item" id="footer">footer</div>
+</div>
+</body>
+</html>
