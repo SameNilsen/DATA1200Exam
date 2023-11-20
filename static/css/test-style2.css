@@ -100,6 +100,8 @@ body, html {
 .image-flex-box {
   /* object-fit: cover; */
   max-width: 100%;
+  height: 900px;
+
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -109,25 +111,19 @@ body, html {
   }
 }
 
-.image-text {
-    font-size: small;
+.secondary-paragraph{
+  font-size: 35px;
 }
 
-.short-paragraph{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  line-height: 1.7;
-  margin-bottom: 14px;
+.heading{
+  font-size: 55px;
 }
 
-.long-paragraph{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 1.7;
-    margin-bottom: 14px;
+.Heading-Kantine{
+
+font-size: 55px;
+
 }
-
-
 .unordered-list {
   list-style-type: none;
 }
