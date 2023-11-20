@@ -1,63 +1,60 @@
 body, html {
-    height: 100%;
-    /* Set margin to 0 so that it fills entire page */
-    margin: 0;
-  }
-  
-  .background-image-index {
-    /* The image used */
-    background-image: url("../images/oslomet-simple.jpg");
-    /* Full height */
-    height: 100%; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .background-image-accessibility {
-    /* The image used */
-    background-image: url("../images/accessibility-image.jpeg");
-    /* Full height */
-    height: 100%; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-
-  .navbar{
-    /* overflow: hidden; */
-    /* background-color: #333; */
-    position: absolute;
-    /* left: 0; */
-    /* left: 0; */
-    /* top: 20%; */
-    /* width: 100%; */
-    /* text-align: center; */
+height: 100%;
+/* Set margin to 0 so that it fills entire page */
+margin: 0;
 }
 
-  .caption {
-    position: absolute;
-    right: 25%;
-    /* left: 0; */
-    top: 45%;
-    width: 100%;
-    text-align: center;
-    /* color: #000; */
-  }
+h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 27px;
+line-height: 1.7;
+margin-bottom: 14px;
+}
+.background-image-index, .background-image-accessibility, .background-image-extra {
+  /* Full height */
+  height: 100%; 
 
-  .caption span.border {
-    background-color: #111;
-    /* background-color: rgb(255, 205, 0); */
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-    font: 400 25px/1.8 "Lato", sans-serif;
-  }
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-image-index {
+  /* The image used */
+  background-image: url("../images/oslomet-simple.jpg");
+}
+.background-image-accessibility {
+  /* The image used */
+  background-image: url("../images/accessibility-image.jpeg");
+}
+
+.background-image-extra {
+  /* The image used */
+  background-image: url("../images/oslomet-image-covered.jpg");
+}
+
+
+
+.caption {
+  position: absolute;
+  right: 25%;
+  /* left: 0; */
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  /* color: #000; */
+}
+
+.caption span.border {
+  background-color: #111;
+  /* background-color: rgb(255, 205, 0); */
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font: 400 25px/1.8 "Lato", sans-serif;
+}
 
 
 
@@ -89,12 +86,6 @@ body, html {
   flex: 50%;
   text-align: center;
   align-self: center;
-  /* background-image: url("../images/oslomet-sign.jpg"); */
-  /* background-size: contain; No */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* min-height: 60vh; */
-  /* background-color: rgb(19, 161, 150); */
 }
 
 .image-flex-box {
@@ -111,6 +102,7 @@ body, html {
   }
 }
 
+<<<<<<< HEAD
 .secondary-paragraph{
   font-size: 35px;
 }
@@ -124,50 +116,72 @@ body, html {
 font-size: 55px;
 
 }
+=======
+.image-text {
+  font-size: small;
+}
+
+
+.short-paragraph{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.long-paragraph{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.navbar{
+  position: absolute;
+}
+
+>>>>>>> e56e8f42ba81e0fbdbd7c29b8e512ecf1fb27379
 .unordered-list {
+  visibility: collapse;
   list-style-type: none;
 }
 
 .navbar-item{
-    visibility: collapse;
-    display: block;
-    background-color: #f1f1f1;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color on hover */
-.navbar-item:hover {
-  background-color: #555;
-}
-
-.navbar-item:hover a {
-    color: white;
-}
-
-.navbar-item a {
+  /* visibility: collapse; */
   display: block;
-  color: #000;
+  background-color: #f1f1f1;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-#collapse:checked ~ li{
-    visibility: visible;
+/* Change the link color on hover */
+.navbar-item:hover {
+background-color: #555;
 }
 
-/* #collapse:checked{
-  background-color: aqua;
+.navbar-item:hover a {
+  color: white;
+}
+
+.navbar-item a {
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+#collapse:checked ~ .unordered-list{
   visibility: visible;
-} */
+}
 
 
 #expand-btn {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 5px 11px;
-    background-color: #ff7;
-    border: 1px solid;
-    border-radius: 3px;
-  }
-  
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-top: 12px;
+  padding: 5px 11px;
+  background-color: #ff7;
+  border: 1px solid;
+  border-radius: 3px;
+}
