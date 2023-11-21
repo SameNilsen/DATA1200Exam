@@ -10,46 +10,47 @@ font-size: 27px;
 line-height: 1.7;
 margin-bottom: 14px;
 }
+
+/* Inspiration for full image from https://www.w3schools.com/howto/howto_css_full_page.asp */
 .background-image-index, .background-image-accessibility, .background-image-extra {
   /* Full height */
   height: 100%; 
 
   /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center; /* Make sure the image is centered. */
+  background-repeat: no-repeat; /* In some cases the image presented would be a series of repeated smaller images. We dont want that. */
+  background-size: cover;       /* Make sure the image covers the entire designated area. */
 }
 
 .background-image-index {
-  /* The image used */
+  /* The image used for the introduction page. */
   background-image: url("../images/oslomet-simple.jpg");
 }
 .background-image-accessibility {
-  /* The image used */
+  /* The image used for the accessibility page. */
   background-image: url("../images/accessibility-image.jpeg");
 }
 
 .background-image-extra {
-  /* The image used */
+  /* The image used for the extra page. */
   background-image: url("../images/oslomet-image-covered.jpg");
 }
 
 
-
+/* Positioning the caption or header on the big image. */
 .caption {
-  position: absolute;
+  position: absolute; /* Set to absolute so we can specify position further with right, left etc. */
   right: 25%;
-  /* left: 0; */
   top: 45%;
   width: 100%;
   text-align: center;
-  /* color: #000; */
 }
 
+/* Creates a black box around the caption or header. */
 .caption span.border {
-  background-color: #111;
-  /* background-color: rgb(255, 205, 0); */
-  color: #fff;
+  background-color: #111; /* Color of the surrounding box */
+  color: #fff;            /* Color of text */
+  /* Specifies size and form of the caption: */
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
@@ -58,47 +59,47 @@ margin-bottom: 14px;
 
 
 
-
+/* The main part of the page should be using this class. */
 .flex-stack {
-  display: flex;
-  flex-direction: column;
+  display: flex;  /* Uses flex as display. */
+  flex-direction: column; /* Sets the direction so child elements stack on top of eachother.  */
 }
 
+/* Each block containing a paragraph and a picture should use this class. */
 .container-flex {
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
+  display: flex;    /* Also uses flex, so that if the window is small (like on a phone) we can change direction of child elements. */
+  flex-direction: row;   /* Default direction (if big/wide screen) is child elements side by side. */
+  /* Create some space around: */
   padding-top: 5vw;
   padding-left: 5vw;
   padding-right: 5vw;
 }
 
+/* Should be used by child elements of .container-flex. */
 .left-flex {
-  /* padding: 10px; */
-  flex: 50%;
+  flex: 50%;  /* Use half of the space. */
   text-align: center;
-  align-self: center;
-  padding: 50px;
+  align-self: center;   /* Center within its container */
+  padding: 50px;        /* Create some space on all fronts. */
 }
 
+/* Should be used by child elements of .container-flex. */
 .right-flex {
-  /* padding: 10px; */
-  flex: 50%;
+  flex: 50%;  /* Use half of the space. */
   text-align: center;
-  align-self: center;
+  align-self: center;   /* Center within its container */
 }
 
+/* Images in a flex container should use this class. */
 .image-flex-box {
-  /* object-fit: cover; */
-  max-width: 100%;
-  /* height: 900px; */
-
+  max-width: 100%;   /* Sets image to use all space within its container. */
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 1000px) {
+  /* If the width of a screen is too small, some elements should stack on top insted of side by side. */
   .container-flex {
-    flex-direction: column;
+    flex-direction: column;  /* Changes direction to stack. */
   }
 }
 
@@ -119,47 +120,52 @@ font-size: 55px;
   font-size: small;
 }
 
-
+/* Should be used by paragraphs that are quite short. They will then get a slightly bigger font. */
 .short-paragraph{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 1.4em;
   line-height: 1.7;
   margin-bottom: 14px;
 }
 
+/* Should be used by paragraphs that are a bit longer. They will then get a slightly smaller font. */
 .long-paragraph{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 0.9em;
   line-height: 1.7;
   margin-bottom: 14px;
 }
 
+/* The navbar button should use this class to control its position. */
 .navbar{
   position: absolute;
 }
 
+/* The navbar list. */
 .unordered-list {
-  visibility: collapse;
-  list-style-type: none;
+  visibility: collapse;  /* Should not be visible by default. */
+  list-style-type: none; /* Remove list dots. */
 }
 
+/* Class to be used by each of the items in the navbar list. */
 .navbar-item{
-  /* visibility: collapse; */
-  display: block;
+  display: block;  /* Block display to get a bigger size and a block around it. */
   background-color: #f1f1f1;
-  padding: 8px 16px;
+  padding: 8px 16px;     /* Create some space around. */
   text-decoration: none;
 }
 
-/* Change the link color on hover */
+/* Change the link block color on hover */
 .navbar-item:hover {
 background-color: #555;
 }
 
+/* Change the link text color on hover */
 .navbar-item:hover a {
   color: white;
 }
 
+/* Sets style for each link in the navbar list. */
 .navbar-item a {
 display: block;
 color: #000;
@@ -167,11 +173,16 @@ padding: 8px 16px;
 text-decoration: none;
 }
 
+/* The navbar button is really a Checkbox, but styled differently. When the user clicks the
+checkbox we can use css to check if it is checked. If it is then all who have the class 
+.unordered-list and are preceding by the collapse element will be selected by this and 
+have its visibility set to visible. In our case it is a way of toggling the visibility
+of our navbar list. */
 #collapse:checked ~ .unordered-list{
   visibility: visible;
 }
 
-
+/* Styling of the navbar button. */
 #expand-btn {
   display: inline-block;
   width: 50px;
