@@ -134,7 +134,7 @@ body {
   }
 
 
-@media (max-width: 1300px) { 
+@media (max-width: 1000px) { 
     .wrapper {grid-template-columns: 1fr}
     #expand-btn{
         display: block;
