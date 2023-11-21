@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="css/test-style2.css">
 </head>
 <body>
+    <!-- Header. This includes the big background image. -->
     <header class="background-image-accessibility">
+        <!-- Caption -->
         <div class="caption">
             <span class="border"> Exam</span>
             <br>
             <span class="border"> - Accessibility</span>
         </div>
+        <!-- Navigation bar. -->
         <nav class="navbar">
+            <!-- Navigation button -->
             <input type="checkbox" id="collapse" hidden/> 
             <label for="collapse" id="expand-btn"><img src="images/hammenu.png" alt="Menu"></label>   
-
+            <!-- Navigation links. Hidden by default. -->
             <ul class="unordered-list">                
                 <li class="navbar-item"><a href="fullimage.html">Index</a></li>
                 <li class="navbar-item"><a href="accessibility.html">Accessibility</a></li>
@@ -27,13 +31,18 @@
               </ul>
             </nav>
         </header>
+        <!-- Image text for header. -->
         <small>
             <p>Accessibility, Levelaccess.com
             <a href="https://www.levelaccess.com/blog/css-background-images-and-accessibility/">source</a></p>
             <a target="_blank" href="https://icons8.com/icon/dMz54mFbVirR/menu">Hamburger Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </small>
+
+    <!-- Main content of page. -->
     <main class="flex-stack">
+        <!-- First block. -->
         <section class="container-flex">
+            <!-- Paragraph section -->
             <section class="left-flex">
                 <h1>Accessibility</h1>
                 <p class="short-paragraph"> When developing this website we ran accessibility tests for all the different pages multiple times
@@ -41,7 +50,7 @@
                     Lighthouse, a built in developer tool for chrome. Eventually we got a near <strong>100 score</strong> on each of the parameters of
                     the test. </p>
             </section>
-            
+            <!-- Picture section -->
             <picture class="right-flex">
                 <img class="image-flex-box" src="images/accessibility-test.png" alt="Accessibility test">
                 <small>
@@ -50,7 +59,9 @@
                 </small>
             </picture>
         </section>
+        <!-- Second block -->
         <section class="container-flex">
+            <!-- Picture section -->
             <picture class="left-flex">
                 <img class="image-flex-box" src="images/semantics-test.jpg" alt="structure of webpage">
                 <small>
@@ -58,6 +69,7 @@
                     <p>Private</p>
                 </small>
             </picture>
+            <!-- Paragraph section -->
             <section class="right-flex">
                 <h1>Semantics</h1>
                 <p class="long-paragraph">One of the tools we used to achive accessibility for our pages was to follow the guidelines from
@@ -73,7 +85,9 @@
                     future developer. </p>
             </section>
         </section>
+        <!-- Third block -->
         <section class="container-flex">
+            <!-- Paragraph section -->
             <section class="left-flex">
                 <h1>Design choices</h1>
                 <p class="short-paragraph">When designing these pages we wanted a simplistic and clear design that makes it accessible to all. For example, 
@@ -81,6 +95,7 @@
                     in contrast to its background while also having a decently large font. As we worked on this project we did not just rely on automated tests 
                     like Lighthouse to ensure accessibility, we also took advice from guides like this <a href="https://www.uio.no/english/for-employees/support/profile/web/accessibility/checklist-for-universal-design-on-uio.html">checklist for universal design from UIO</a>  </p>
             </section>
+            <!-- Picture section -->
             <picture class="right-flex">
                 <img class="image-flex-box" src="images/skeleton.jpg" alt="oslomet skeleton">
                 <small>
@@ -89,7 +104,9 @@
                 </small>
             </picture>
         </section>
+        <!-- Fourth block -->
         <section class="container-flex">
+            <!-- Picture section -->
             <picture class="left-flex">
                 <img class="image-flex-box" src="images/accessibility-code.jpg" alt="code from extra.html">
                 <small>
@@ -97,6 +114,7 @@
                     <p>Private</p>
                 </small>
             </picture>
+            <!-- Paragraph section -->
             <section class="right-flex">
                 <h1>Scalability</h1>
                 <p class="short-paragraph">Another feature we had in mind when developing this project was the ability to scale the pages when further developing. In the
