@@ -33,7 +33,7 @@ margin-bottom: 14px;
 
 .background-image-extra {
   /* The image used for the extra page. */
-  background-image: url("../images/oslomet-image-covered.jpg");
+  background-image: url("../images/extra-background.jpg");
 }
 
 
@@ -93,6 +93,8 @@ margin-bottom: 14px;
 /* Images in a flex container should use this class. */
 .image-flex-box {
   max-width: 100%;   /* Sets image to use all space within its container. */
+  height: 1000px;
+  border-radius: 10px; /* it creates rounded corners for the images*/
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -121,7 +123,7 @@ margin-bottom: 14px;
 /* Should be used by paragraphs that are a bit longer. They will then get a slightly smaller font. */
 .long-paragraph{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 1.2em;
   line-height: 1.7;
   margin-bottom: 14px;
 }
