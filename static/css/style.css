@@ -6,7 +6,7 @@ margin: 0;
 
 h1 {
 font-family: Arial, Helvetica, sans-serif;
-font-size: 27px;
+font-size: 1.7em;
 line-height: 1.7;
 margin-bottom: 14px;
 }
@@ -24,7 +24,7 @@ margin-bottom: 14px;
 
 .background-image-index {
   /* The image used for the introduction page. */
-  background-image: url("../images/oslomet-simple.jpg");
+  background-image: url("../images/hovedinngang.image.jpg");
 }
 .background-image-accessibility {
   /* The image used for the accessibility page. */

@@ -28,6 +28,7 @@ html:focus-within {
     grid-column-end: 7;
 }
 
+
 /* Navbar  */
 header a,
 header button {
@@ -48,6 +49,8 @@ header {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 20px;
+    z-index: 1; /* Bring the navbar to front. */
 }
 
 .logo {
@@ -99,6 +102,60 @@ button:hover {
 
   .navlinks a {
       padding: 10px;
+  }
+}
+
+.topnav-box ul {
+  list-style-type: none;  /* Remove list dots. */
+  margin: 0;
+  overflow: hidden;
+}
+
+.topnav-box li {
+  display: inline-block;  /* By default the linkitems are displayed in blocks side by side. */
+}
+
+.topnav-box a{
+  display: block;  /* Each link is displayed as block */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.topnav-box li a:hover {
+  background-color: rgb(255, 205, 0);  /* Make the box around the links yellow on hover. */
+}
+
+/* When the checkbox/button is clicked, the unordered list element shall be shown. */
+#collapse:checked ~ ul{
+  display: block;
+  align-self: center;
+  justify-content: center;
+}
+
+/* The navbar button. */
+#expand-btn {
+  display: none;  /* By default it is hidden. */
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) { 
+  /* When the width of the screen gets small enough the button should be visible. */
+  #expand-btn{
+      display: block;
+      text-align: center;
+  }
+  /* Hide the list for now. */
+  ul {
+      display: none;
+  }
+  /* Change from inline-block to block so that the list elements are shown on top of eachother. */
+  .topnav-box li {
+      display: block;
+  }
+  /* Make it so the button is stacked on top of the list. */
+  .topnav-box {
+      flex-direction: column;
   }
 }
 

@@ -5,28 +5,41 @@
     <meta lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DS-grid</title>
-    <link rel="stylesheet" href="DS-grid copy.css">
+    <link rel="stylesheet" href="css/DS-grid copy.css">
 </head>
 <body>
 <div class="grid-container">
 
     <!--Header-->
     <header class="grid-item" id="header">
-        <h1 class="logo">B'Saha</h1>
-        <div class="navlinks">
+        <!-- <div class="navlinks">
             <a href="#">Index</a>
             <a href="#">Accessibility</a>
             <a class="active" href="#">Topical</a>
             <a href="#">Remaining 1</a>
             <a href="#">Remaining 2</a>
+        </div> -->
+        <!-- Navigation. -->
+        <div class="topnav-box">
+            <!-- Navigation buttons. -->
+            <input type="checkbox" id="collapse" hidden/> 
+            <label for="collapse" id="expand-btn"><img src="images/hammenu.png" alt="Menu"></label> 
+            <!-- The navigation links. -->
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="DS-grid copy.html">Topical</a></li>
+                <li><a href="extra.html">extra</a></li>
+            </ul>
         </div>
+        <h1 class="logo">B'Saha</h1>
         <a href="#" class="btn"> <button> Contact</button></a>
     </header>
 
     <!--HeroImage-->
     <picture class="grid-item">
         <div class="hero-image">
-            <img src="/Images/Wassim-Chouak-BlueCity.jpg" alt="Hero Image" class="hero-image">
+            <img src="images/accessibility-image.jpeg" alt="Hero Image" class="hero-image">
             <div class="hero-overlay">
                 <h1>New conseptg</h1>
                 <p>a collective of like-minded individuals seeking the benefits of a balanced lifestyle through exercise and healthy eating.</p>
