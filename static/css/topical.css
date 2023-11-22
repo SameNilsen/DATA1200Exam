@@ -7,7 +7,8 @@ html:focus-within {
     scroll-behavior: smooth; 
 }
 
-/* Navbar  */
+/* header / Navbar  */
+
 header a,
 header button {
     color: rgb(0, 0, 0);
@@ -225,6 +226,7 @@ button:hover {
     color: #1a60bc;
 }
 
+/* Media Query for smaller screens */
 @media(min-width: 40em){
     .grid-even-columns{
         grid-template-columns: repeat(2, 1fr);
@@ -237,10 +239,12 @@ button:hover {
     }
 }
 
+
 /*article-container-grid*/
+
 .article-grid-template{
     display: grid;
-    gap: 2rem;
+    gap: 2rem; /*always a gap between the divs*/
     padding: 20px;
 
     grid-template-areas: 
@@ -248,6 +252,7 @@ button:hover {
     'three four four four';
 }
 
+/* Media Query for smaller screens */
 @media(max-width: 70em){
     .article-grid-template{
         grid-template-areas: 
@@ -259,7 +264,6 @@ button:hover {
 }
 
 /*defining the grid-templet area*/
-
 .article-grid-one{
     grid-area: one;
 }
