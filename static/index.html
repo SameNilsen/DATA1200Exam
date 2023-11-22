@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page describing accessibility">
+    <meta name="description" content="The home page of the project">
     <title>Home Page</title>
-    <link rel="stylesheet" href="css/test-style2.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header. This includes the big background image. -->
 <header class="background-image-accessibility">
+        <!-- Caption -->
     <div class="caption">
         <span class="border">Exam Data1200</span>
         <br>
         <span class="border">2023</span>
     </div>
+        <!-- Navigation bar. -->
     <nav class="navbar">
+            <!-- Navigation button -->
         <input type="checkbox" id="collapse" hidden/>
         <label for="collapse" id="expand-btn"><img src="images/hammenu.png"
                                                    alt="Menu"></label>
-
+            <!-- Navigation links. Hidden by default. -->
         <ul class="unordered-list">
-            <li class="navbar-item"><a href="fullimage.html">Index</a></li>
+            <li class="navbar-item"><a href="index.html">Index</a></li>
             <li class="navbar-item"><a
                     href="accessibility.html">Accessibility</a></li>
             <li class="navbar-item"><a href="index.html">Topical</a></li>
             <li class="navbar-item"><a href="extra.html">extra</a></li>
-            <li class="navbar-item"><a href="extraTest.html">extraTest</a></li>
         </ul>
     </nav>
 </header>
-
+<!-- Image text for header. -->
+<small>
+    <p>Accessibility, Levelaccess.com
+    <a href="https://www.levelaccess.com/blog/css-background-images-and-accessibility/">source</a></p>
+    <a target="_blank" href="https://icons8.com/icon/dMz54mFbVirR/menu">Hamburger Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</small>
+    <!-- Main content of page. -->
 <main class="flex-stack">
-    <div class="container-flex">
-        <div class="left-flex">
+        <!-- First block. -->
+    <section class="container-flex">
+            <!-- Paragraph section -->
+        <section class="left-flex">
             <h1>Instructions for the submission</h1>
             <p class="short-paragraph"> We were tasked with making a simple
                 webpage that has 4 or 5 different pages. Page one is supposed to
@@ -43,8 +54,8 @@
                 aspect of the campus. The second part of the exam is that
                 all of the pages but one must share the same visual design.
                 Ande the last is that we must comment on the code we used. </p>
-        </div>
-
+        </section>
+            <!-- Picture section -->
         <picture class="right-flex">
             <img class="image-flex-box" src="images/Instructions.jpg">
 
@@ -55,8 +66,10 @@
                         by pch.vector</a> on Freepik</p>
             </small>
         </picture>
-    </div>
-    <div class="container-flex">
+    </section>
+        <!-- Second block -->
+    <section class="container-flex">
+            <!-- Picture section -->
         <picture class="left-flex">
             <img class="image-flex-box"
                  src="images/Calendar.png" alt="Marked calendar">
@@ -65,17 +78,20 @@
                 <p>Private</p>
             </small>
         </picture>
-        <div class="right-flex">
+            <!-- Paragraph section -->
+        <section class="right-flex">
             <h1>Schedule</h1>
             <p class="short-paragraph">
                 We have until wednesday november 22nd 2023 at 12:00 o'clock
                 to submit this assignment
             </p>
-        </div>
-    </div>
-    <div class="container-flex">
+        </section>
+    </section>
+        <!-- Third block -->
+    <section class="container-flex">
         <div>
-            <div class="left-flex">
+            <!-- Paragraph section -->
+            <section class="left-flex">
                 <h1>Students/Contributors</h1>
                 <p class="short-paragraph">
                     The 5 studtents that worked on this submissions there are:
@@ -87,8 +103,9 @@
                     <li>s371416</li>
                     <li>s376930</li>
                 </ul>
-            </div>
+            </section>
         </div>
+            <!-- Picture section -->
         <picture class="right-flex">
             <img class="image-flex-box"
                  src="images/studenter som jobber.png"
