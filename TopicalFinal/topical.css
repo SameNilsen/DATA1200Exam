@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html:focus-within { 
+    scroll-behavior: smooth; 
+}
+
+
+/*Heroimage*/
+
+.hero-image {
+    width: 100%; /* Make the image take up 100% of the container width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    max-height:700px ; /* Set a maximum height for the image container */
+    object-fit: cover; /* Ensure the image covers the container */
+    position: relative; /* Establish a positioning context for the overlay */
+}
+    
+    .hero-overlay {
+    position: absolute; /* Position the overlay relative to the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+    
+.hero-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+    }
+    
+.hero-overlay p {
+    font-size: 18px;
+    padding: 50px;
+    color: #f4f4f4;
+}
+
+
+/*article-container*/
+
+.article-container{
+   padding: 50px;
+}
+
+.article-container a{
+    text-decoration:none;
+    color: rgb(0, 0, 160);
+    font-weight: 500;
+}
+
+.article-container a:hover{
+    transition: all 0.2s ease 0s;
+    color: #05224967;
+}
+
+.article-container p,
+.grid-even-columns p{
+    line-height: 26px;
+}
+
+
+/*Grid-even-colums*/
+
+.grid-even-colums-container{
+    padding: 50px;
+    align-items: center;
+}
+
+.grid-even-colums-container h1{
+    font-size: 50px;
+}
+
+.grid-even-columns{
+    display: grid;  
+    gap: 2rem; 
+    padding: 20px;
+}
+.flow a {
+    text-decoration: underline;
+    color: black;
+}
+
+.flow a:hover{
+    transition: all 0.2s ease 0s;
+    color: #1a60bc;
+}
+
+@media(min-width: 40em){
+    .grid-even-columns{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 70em){
+    .grid-even-columns{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*article-container-grid*/
+.article-grid-template{
+    display: grid;
+    gap: 2rem;
+    padding: 20px;
+
+    grid-template-areas: 
+    'one one one two'
+    'three four four four';
+}
+
+@media(max-width: 70em){
+    .article-grid-template{
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four';
+    }
+}
+
+/*defining the grid-templet area*/
+
+.article-grid-one{
+    grid-area: one;
+}
+
+.article-grid-two{
+    grid-area: two;
+}
+
+.article-grid-three{
+    grid-area: three;
+}
+
+.article-grid-four{
+    grid-area: four;
+}
+
+
+  
