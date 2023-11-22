@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: black;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Grid classes */
+.grid-container {
+    display: grid; /* Makes the element behave like a grid */
+    grid-template-columns: 20% 20% 10% 10% 20% 20%; /* Deviding the page in 6 columns */
+}
+.grid-item {
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    /* All elemnts int this class expands through all the columns */
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+
+/* Navbar  */
+header a,
+header button {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 620;
+}
+
+header {
+    background-color: rgba(200, 200, 200, 0.95);
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 20px;
+    z-index: 1; /* Bring the navbar to front. */
+}
+
+.logo {
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    font-weight: 640;
+    padding: 15px;
+}
+
+.navlinks a {
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.navlinks a:hover {
+    transition: all 0.3s ease 0s;
+    color: #1a60bc;
+}
+
+button {
+    font-weight: 700;
+    font-size: 14px;  
+    padding: 9px 25px;
+    background-color:  #7695be;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(144, 163, 199);
+}
+
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .navlinks {
+      margin-top: 0; /* Remove margin for spacing */
+  }
+
+  .navlinks a {
+      padding: 10px;
+  }
+}
+
+.topnav-box ul {
+  list-style-type: none;  /* Remove list dots. */
+  margin: 0;
+  overflow: hidden;
+}
+
+.topnav-box li {
+  display: inline-block;  /* By default the linkitems are displayed in blocks side by side. */
+}
+
+.topnav-box a{
+  display: block;  /* Each link is displayed as block */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.topnav-box li a:hover {
+  background-color: rgb(255, 205, 0);  /* Make the box around the links yellow on hover. */
+}
+
+/* When the checkbox/button is clicked, the unordered list element shall be shown. */
+#collapse:checked ~ ul{
+  display: block;
+  align-self: center;
+  justify-content: center;
+}
+
+/* The navbar button. */
+#expand-btn {
+  display: none;  /* By default it is hidden. */
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) { 
+  /* When the width of the screen gets small enough the button should be visible. */
+  #expand-btn{
+      display: block;
+      text-align: center;
+  }
+  /* Hide the list for now. */
+  ul {
+      display: none;
+  }
+  /* Change from inline-block to block so that the list elements are shown on top of eachother. */
+  .topnav-box li {
+      display: block;
+  }
+  /* Make it so the button is stacked on top of the list. */
+  .topnav-box {
+      flex-direction: column;
+  }
+}
+
+ /* heroImage */
+.heroImage {
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+  background: #1a60bc;
+  color: white;
+}
+
+.heroImage h1,
+.heroImage p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.heroImage h1,
+.heroImage p {
+  font-size: 16px;
+  font-weight: 660;
+}
+
+.heroImage p {
+  font-size: 12px;
+  font-weight: 620;
+}
+
+/* Grid box */
+article {
+  background-color: rgb(200, 200, 200, 0.5);
+  border: 5px solid black;
+  padding: 30px;
+  margin: 20px;
+}
+/* All the boxes uses different columns */
+.box-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.box-2 {
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+.box-3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.box-4 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+/* On smaller screens they use the whole width of the pages */
+@media only screen and (max-width: 768px) {
+  [class*="box-"] {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+}
+
+article h1 {
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 660;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+article p {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+  
+/* HeroImagex */
+.custom-image {
+  width: 100%; /* Set the width to 100% of the container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.hero-image {
+  width: 100%; /* Make the image take up 100% of the container width */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  max-height:700px ; /* Set a maximum height for the image container */
+  object-fit: cover; /* Ensure the image covers the container */
+  position: relative; /* Establish a positioning context for the overlay */
+}
+
+.hero-overlay {
+  position: absolute; /* Position the overlay relative to the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #f4f4f4;
+}
+
+.hero-overlay p {
+  font-size: 1.5em;
+  margin: 0;
+  color: #f4f4f4;
+}
+
+/* News section */
+#news-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.news-box {
+  width: 300px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(53.7, 81.2, 94.1, 0.7);
+  margin-bottom: 20px;
+}
+
+.news-box h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.news-box p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 620;
+}

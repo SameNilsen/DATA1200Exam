@@ -6,7 +6,7 @@ margin: 0;
 
 h1 {
 font-family: Arial, Helvetica, sans-serif;
-font-size: 27px;
+font-size: 1.7em;
 line-height: 1.7;
 margin-bottom: 14px;
 }
@@ -24,7 +24,7 @@ margin-bottom: 14px;
 
 .background-image-index {
   /* The image used for the introduction page. */
-  background-image: url("../images/oslomet-simple.jpg");
+  background-image: url("../images/hovedinngang.image.jpg");
 }
 .background-image-accessibility {
   /* The image used for the accessibility page. */
@@ -33,7 +33,7 @@ margin-bottom: 14px;
 
 .background-image-extra {
   /* The image used for the extra page. */
-  background-image: url("../images/oslomet-image-covered.jpg");
+  background-image: url("../images/extra-background.jpg");
 }
 
 
@@ -93,6 +93,7 @@ margin-bottom: 14px;
 /* Images in a flex container should use this class. */
 .image-flex-box {
   max-width: 100%;   /* Sets image to use all space within its container. */
+  border-radius: 10px; /* it creates rounded corners for the images*/
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
